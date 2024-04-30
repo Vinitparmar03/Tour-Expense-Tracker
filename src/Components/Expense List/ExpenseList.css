@@ -1,0 +1,81 @@
+.expense-container {
+  max-width: 800px;
+  margin: 80px auto 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+.title .title-inside {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.title svg {
+  position: absolute;
+  color: red;
+  font-size: 35px;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+}
+
+.friends-data {
+  margin-top: 20px;
+}
+
+.friend {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.friend-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.spends {
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.spends .spends-dets {
+  color: black;
+}
+
+.where {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.total {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.date-total .date-total-inside {
+  margin-bottom: 5px;
+  color: black;
+  font-weight: bold;
+}

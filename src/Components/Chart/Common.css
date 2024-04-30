@@ -1,0 +1,55 @@
+.bar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  gap: 100px;
+}
+
+.bar section {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.bar section h2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .bar section {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .bar section {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .bar section h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .bar {
+    margin-top: 100px;
+  }
+  .bar section {
+    width: 98%;
+  }
+
+  .bar section h2 {
+    font-size: 14px;
+  }
+}

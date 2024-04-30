@@ -1,0 +1,98 @@
+.table {
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 1600px;
+}
+
+.heading {
+  width: 80%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px 16px;
+  border: 1px solid gray;
+}
+
+tbody tr {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.093);
+  border: 1px solid gray;
+}
+
+tbody td {
+  padding: 1rem;
+  border: 1px solid gray;
+}
+
+tbody img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+tbody a {
+  text-decoration: none;
+  background-color: rgba(44, 104, 255, 0.455);
+  color: rgba(44, 104, 255);
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+}
+
+tbody button {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #db4444;
+  font-size: 24px;
+}
+
+tbody button:hover {
+  opacity: 0.6;
+}
+
+tbody button:first-child {
+  border-left: none;
+}
+tbody button:last-child {
+  border-right: none;
+}
+
+.table-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 32px;
+}
+
+.table-pagination button {
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #db4444;
+  color: white;
+}
+
+.table-pagination button:disabled {
+  background-color: rgba(0, 115, 255, 0.1);
+  cursor: not-allowed;
+}

@@ -1,0 +1,138 @@
+.nav-bar {
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #2e2e2c;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.06);
+}
+
+.nav-bar h1 {
+  font-size: 28px;
+  cursor: default;
+  color: white;
+}
+
+.nav-bar .nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-bar .nav-list li {
+  cursor: pointer;
+  width: 120px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+  font-weight: 500;
+}
+
+.nav-bar .nav-list li.active {
+  background-color: white;
+  color: #191919;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-bar svg {
+  color: white;
+  font-size: 30px;
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bar {
+    padding: 20px 30px;
+  }
+
+  .nav-bar h1 {
+    font-size: 24px;
+  }
+
+  .nav-bar .nav-list {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .nav-bar {
+    padding: 20px 20px 20px 30px;
+  }
+
+  .nav-bar h1 {
+    font-size: 20px;
+  }
+
+  .nav-bar .nav-list {
+    gap: 6px;
+  }
+
+  .nav-bar .nav-list li {
+    width: 90px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-bar .nav-list {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: white;
+    top: -180px;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-bar .nav-list.open {
+    top: 60px;
+    visibility: visible;
+    transition: all 0.3s ease-in;
+  }
+
+  .nav-bar .nav-list li {
+    width: 100%;
+    color: black;
+  }
+
+  .nav-bar .nav-list a {
+    width: 100%;
+  }
+
+  .nav-bar .nav-list li.active {
+    background-color: #191919;
+    color: white;
+    width: 100% !important;
+    border-radius: 0;
+  }
+
+  .nav-bar svg {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-bar {
+    padding: 16px 20px;
+  }
+
+  .nav-bar svg {
+    font-size: 25px;
+  }
+
+  .nav-bar h1 {
+    font-size: 18px;
+  }
+}

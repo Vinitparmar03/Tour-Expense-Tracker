@@ -1,0 +1,70 @@
+.add-expense {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-expense div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  min-height: 150px;
+  background-color: white;
+  width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0px 20px rgba(44, 44, 44, 0.89),
+    0 0px 8px rgba(68, 68, 68, 0.89);
+}
+
+.add-expense div input,
+.add-expense div select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  border: 1px solid #1b1f3d;
+}
+
+.add-expense div select option {
+  color: black;
+}
+
+.add-expense div input:focus,
+.add-expense div select:focus {
+  outline: none;
+}
+
+.add-expense div .btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #21335f;
+  cursor: pointer;
+}
+
+.add-expense div .btn a {
+  color: white;
+}
+
+.add-expense div .btn:active {
+  background-color: #1b1f3d;
+}
+
+.add-expense .suggestion {
+  width: 100%;
+}
+.add-expense .suggestion li {
+  width: 100%;
+  color: black;
+  background-color: #9c9595;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

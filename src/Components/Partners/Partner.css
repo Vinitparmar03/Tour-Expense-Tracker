@@ -1,0 +1,68 @@
+.partners {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners > div {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  min-height: 400px;
+  width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 14px 30px rgba(3, 3, 3, 0.22), 0 10px 10px rgba(3, 3, 3, 0.22);
+}
+
+.partners div input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #1b1f3d;
+  color: black;
+}
+
+.partners div input:focus {
+  outline: none;
+}
+
+.partners div .btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #21335f;
+  cursor: pointer;
+}
+
+.partners div .btn {
+  color: white;
+}
+
+.partners div .btn:active {
+  background-color: #1b1f3d;
+}
+
+.partners > div div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.partners > div div span {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: #1b1f3d;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
