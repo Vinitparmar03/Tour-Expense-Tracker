@@ -5,7 +5,7 @@ This is a tour expense tracking web application built using Redux Toolkit and Vi
 
 ## Preview
 
-[Exclusive E-Commerce](https://exclusive-ecommerce-omega.vercel.app/)
+[Tour Expense Tracker](https://tour-expense-tracker.vercel.app/)
 
 ## Technologies Used
 
